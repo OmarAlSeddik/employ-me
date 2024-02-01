@@ -6,18 +6,18 @@ import {
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import Link from "next/link";
-import { Separator } from "./ui/separator";
+import { Separator } from "../ui/separator";
 
-const MobileNav2 = () => {
+const MobileNav = () => {
   // temp
   const user = false;
 
   const links = [
     { id: 1, title: "Home", url: "/" },
     { id: 2, title: "About Us", url: "/about-us" },
-    { id: 3, title: "Services", url: "/" },
-    { id: 4, title: "Available Vacancies", url: "/" },
-    { id: 5, title: "Contact Us", url: "/" },
+    { id: 3, title: "Services", url: "/services" },
+    { id: 4, title: "Available Vacancies", url: "/available-vacancies" },
+    { id: 5, title: "Contact Us", url: "/contact-us" },
   ];
 
   return (
@@ -26,7 +26,7 @@ const MobileNav2 = () => {
         <Menu className="text-3xl md:hidden" />
       </SheetTrigger>
       <SheetContent side={"top"}>
-        <div className="flex flex-col items-center gap-4 text-lg">
+        <nav className="flex flex-col items-center gap-4 text-lg">
           {links.map((item) => (
             <>
               <SheetClose asChild key={item.id}>
@@ -50,10 +50,10 @@ const MobileNav2 = () => {
               </SheetClose>
             </>
           )}
-        </div>
+        </nav>
       </SheetContent>
     </Sheet>
   );
 };
 
-export default MobileNav2;
+export default MobileNav;
