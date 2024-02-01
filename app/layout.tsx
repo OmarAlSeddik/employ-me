@@ -1,8 +1,10 @@
+import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Open_Sans, Poppins } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["400"] });
+const openSans = Open_Sans({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +17,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="h-full">
+      <body
+        className={cn(
+          "relative h-full font-sans antialiased",
+          poppins.className,
+          openSans.className
+        )}
+      >
+        <main className="relative flex min-h-screen flex-col">
+          <div className="flex-1 grow">{children}</div>
+        </main>
+      </body>
     </html>
   );
 }
