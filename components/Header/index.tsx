@@ -4,7 +4,7 @@ import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
-    <header className="sticky inset-x-0 top-0 flex items-center justify-between bg-white px-8 text-gray-500 shadow-lg">
+    <header className="sticky inset-x-0 top-0 flex items-center justify-between bg-white px-8 shadow-lg">
       <Image
         src="/images/empoly-me.png"
         alt="Employ Me Logo"

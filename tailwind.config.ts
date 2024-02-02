@@ -18,19 +18,25 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        poppins: ["var(--font-poppins)", "sans-serif"],
+        "open-sans": ["var(--font-open-sans)", "sans-serif"],
+      },
       colors: {
+        "text-color": "hsl(var(--text-color))", // Custom
+        "header-color": "hsl(var(--header-color))", // Custom
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "hsl(var(--primary))", // Custom
           foreground: "hsl(var(--primary-foreground))",
           hover: "hsl(var(--primary-hover))",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
+          DEFAULT: "hsl(var(--secondary))", // Custom
           foreground: "hsl(var(--secondary-foreground))",
         },
         destructive: {

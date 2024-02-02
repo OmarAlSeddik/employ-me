@@ -4,6 +4,9 @@
 
 @layer base {
   :root {
+    --text-color: 230 8% 47%; /* Custom */
+    --header-color: 0 0% 10%; /* Custom */
+
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -74,5 +77,28 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  p {
+    @apply max-w-prose;
+  }
+
+  .font-header-1 {
+    @apply font-poppins text-[2.5rem] font-semibold;
+  }
+
+  .font-header-2 {
+    @apply font-poppins text-[2rem] font-semibold;
+  }
+
+  .font-header-3 {
+    @apply font-poppins text-[1.25rem] font-semibold;
+  }
+
+  .font-header-4 {
+    @apply font-poppins text-[1rem] font-semibold;
+  }
+
+  .font-button {
+    @apply font-poppins font-medium;
   }
 }
