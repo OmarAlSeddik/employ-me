@@ -16,7 +16,7 @@ const Awards = () => {
               objectFit="contain"
             />
           </div>
-          <p className="font-header-3 text-header-color">
+          <p className="font-header-4 text-header-color">
             Employ me was Honored to be Announced as the Recruitment Management
             Company of the Year in Africa for the year 2023/ 24 by the PRESTIGE
             AWARDS.
@@ -31,7 +31,7 @@ const Awards = () => {
               objectFit="contain"
             />
           </div>
-          <p className="font-header-3 text-header-color">
+          <p className="font-header-4 text-header-color">
             Employ me was Honored to be Announced as the Most Pioneering Online
             Talent Management Organization of the Year in Africa for the year
             2023/ 24 by the African Excellence AWARDS.

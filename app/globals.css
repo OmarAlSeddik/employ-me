@@ -91,10 +91,14 @@
   }
 
   .font-header-3 {
-    @apply font-poppins text-[1.1rem] md:text-[1.25rem] font-semibold;
+    @apply font-poppins text-[1.25rem] md:text-[1.5rem] font-semibold;
   }
 
   .font-header-4 {
+    @apply font-poppins text-[1.1rem] md:text-[1.25rem] font-semibold;
+  }
+
+  .font-header-5 {
     @apply font-poppins text-[1rem] font-semibold;
   }
 

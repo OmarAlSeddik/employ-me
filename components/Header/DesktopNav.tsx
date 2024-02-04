@@ -18,21 +18,21 @@ const DesktopNav = () => {
         <Link
           key={link.id}
           href={link.url}
-          className="transition hover:text-primary"
+          className="transition hover:text-white"
         >
           {link.title}
         </Link>
       ))}
       {user ? (
-        <Link href="/" className="transition hover:text-primary">
+        <Link href="/" className="transition hover:text-white">
           Logout
         </Link>
       ) : (
         <>
-          <Link href="/" className="transition hover:text-primary">
+          <Link href="/" className="transition hover:text-white">
             Register
           </Link>
-          <Link href="/" className="transition hover:text-primary">
+          <Link href="/" className="transition hover:text-white">
             Login
           </Link>
         </>

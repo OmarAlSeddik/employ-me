@@ -25,7 +25,10 @@ const MobileNav = () => {
       <SheetTrigger asChild>
         <Menu className="text-3xl md:hidden" />
       </SheetTrigger>
-      <SheetContent side={"top"}>
+      <SheetContent
+        side={"top"}
+        className="bg-secondary px-0 py-4 text-gray-300"
+      >
         <nav className="flex flex-col items-center gap-4 text-lg">
           {links.map((item) => (
             <>
