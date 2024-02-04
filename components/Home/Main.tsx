@@ -33,19 +33,20 @@ const Main = () => {
               </h3>
             </div>
           </div>
-          <Link href="/submit-your-cv">
-            <Button
-              variant="outline"
-              className="font-button gap-4 p-6 text-primary outline-primary hover:bg-primary hover:text-white"
-            >
+          <Button
+            variant="outline"
+            className="font-button gap-4 p-6 text-primary outline-primary hover:bg-primary hover:text-white"
+            asChild
+          >
+            <Link href="/submit-your-cv">
               Submit Your CV
               <MoveRight className="size-4" />
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
         <div className="relative flex flex-1 flex-col items-center">
           <div className="relative h-[30rem] w-[20rem] overflow-hidden rounded lg:h-[45rem] lg:w-[30rem]">
-            <Image src="/images/facilites.webp" alt="Facility" fill />
+            <Image src="/home/facilites.webp" alt="Facility" fill />
           </div>
           <div className="absolute bottom-0 flex w-full items-center gap-4 rounded bg-primary p-6 text-white">
             <ThumbsUp className="size-16" />
@@ -62,7 +63,7 @@ const Main = () => {
       <div className="flex w-full flex-col justify-between gap-24 md:flex-row">
         <div className="relative flex flex-1 flex-col items-center">
           <div className="relative h-[30rem] w-[20rem] overflow-hidden rounded lg:h-[45rem] lg:w-[30rem]">
-            <Image src="/images/affordable-pricing.webp" alt="Facility" fill />
+            <Image src="/home/affordable-pricing.webp" alt="Facility" fill />
           </div>
           <div className="absolute top-0 flex w-full items-center gap-4 rounded bg-primary p-6 text-white">
             <DollarSign className="size-12" />
@@ -90,15 +91,16 @@ const Main = () => {
               </h3>
             </div>
           </div>
-          <Link href="/pricing">
-            <Button
-              variant="outline"
-              className="font-button gap-4 p-6 text-primary outline-primary hover:bg-primary hover:text-white"
-            >
+          <Button
+            variant="outline"
+            className="font-button gap-4 p-6 text-primary outline-primary hover:bg-primary hover:text-white"
+            asChild
+          >
+            <Link href="/pricing">
               Check Pricing
               <MoveRight className="size-4" />
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
       </div>
     </section>

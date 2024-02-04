@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Employ Me - Homepage",
-  description: "An Egyptian Employment Platform.",
+  description: "An egyptian employment platform.",
 };
 
 export default function HomePage() {

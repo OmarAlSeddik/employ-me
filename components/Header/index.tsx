@@ -26,13 +26,18 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 py-12 text-gray-300 transition-all duration-500">
+    <header className="fixed inset-x-0 top-0 z-50 py-6 text-gray-300 transition-all duration-500">
       <div className="container flex items-center justify-between">
         <div
           className="relative size-32 transition-all duration-500"
           id="logo-image"
         >
-          <Image src="/images/employ-me.webp" alt="Employ Me Logo" fill />
+          <Image
+            src="/home/employ-me.webp"
+            alt="Employ Me Logo"
+            fill
+            objectFit="contain"
+          />
         </div>
         <DesktopNav />
         <MobileNav />

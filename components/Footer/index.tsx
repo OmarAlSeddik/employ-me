@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container flex flex-col items-center gap-16 py-16 md:flex-row">
         <div className="flex flex-col items-center">
           <Image
-            src="/images/employ-me.webp"
+            src="/home/employ-me.webp"
             alt="Employ Me Logo"
             width={150}
             height={150}
@@ -84,7 +84,7 @@ const Footer = () => {
           </div>
           <a href="https://my.greengeeks.com/seal/" target="_blank">
             <Image
-              src="/images/green.webp"
+              src="/home/green.webp"
               alt="This Website is Green"
               width={119}
               height={49}

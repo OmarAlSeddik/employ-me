@@ -13,12 +13,12 @@ const Promise = () => {
   return (
     <section className="container flex flex-col items-center gap-4 py-24">
       <h2 className="font-header-1 text-header-color">Our Promise</h2>
-      <Link href="/services">
-        <Button className="font-button gap-4 p-6 text-white">
+      <Button className="font-button gap-4 p-6 text-white" asChild>
+        <Link href="/services">
           Our Services
           <MoveRight className="size-4" />
-        </Button>
-      </Link>
+        </Link>
+      </Button>
       <div className="flex flex-col flex-wrap items-center justify-center gap-[2rem] md:flex-row">
         <div className="flex h-[16rem] w-[25rem] max-w-[90%] flex-col gap-8 rounded p-10 text-base shadow-xl">
           <Clock className="size-[2rem] text-primary" />
